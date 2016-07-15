@@ -1,0 +1,120 @@
+.payments_slider {
+	&_wrap {
+		margin-bottom: 20px;
+    	margin-left: 48px;
+	}
+	&_title {
+		font-family: blisspro-light;
+		font-size: 17px;
+		color: #070707;
+    	margin-bottom: 17px;
+		float: left;
+		span {
+			border-bottom: 1px #dce7f0 solid;
+			padding-bottom: 3px;
+		}
+	}
+	&_date {
+		color: #9ba2a6;
+		font-family: PTN57F;
+	    font-size: 12px;
+	    float: right;
+    	padding: 5px;
+    	padding-top: 6px;
+	    padding-right: 15px;
+	    position: relative;
+	    &:before {
+			content: "";
+    	    display: block;
+			width: 13px;
+	    	height: 13px;
+	    	position: absolute;
+			top: 4px;
+    		right: 68px;
+			background: url(../image/clock_icon.png);
+	    }
+	}
+	&_slider {
+		.ui-widget-header {
+			background: #61a4d8;
+		}
+		&.ui-widget.ui-widget-content {
+			border: none;
+			height: 3px;
+			background-image: url("../image/slider_bg.jpg");
+			margin-right: 17px;
+		}
+		&.has_profit {
+			.ui-slider-handle.ui-corner-all.ui-state-default {
+				background-image: url("../image/slider_marker_profit.png");
+			}
+		}
+		.ui-slider-handle.ui-corner-all.ui-state-default {
+    		margin-left: -5px;
+			border: none;
+			background-color: transparent;
+			background-image: url("../image/slider_marker.png");
+		    width: 11px;
+		    height: 14px;
+	        top: -6px;
+	        cursor: pointer;
+			&.ui-state-active {
+				background-color: transparent;
+			}
+	        &:focus {
+        		outline: none;
+  				user-select: none;  
+	        }
+		}
+	} 
+
+	&_slider.has_profit &_profit_progress{
+		display: block;
+	}
+	&_profit_progress {
+		position: absolute;
+		background: #a0c40e;
+		height: 3px;
+    	z-index: 1;
+    	display: none;
+	}
+	&_value {
+    	z-index: 1;
+		font-size: 12px;
+		position: absolute;
+    	width: 52px;
+    	margin-left: -10px;
+		&_wrap {
+    		margin-right: 17px;
+			position: relative;
+    		margin-top: 8px;
+		    height: 20px;
+			font-family: PTN57F;
+			color: #4e5d70;
+		}
+		&_dollar {
+			font-size: 13px;
+		}
+	}
+	&_profit {
+		position: relative;
+    	margin-right: 17px;
+		&_value {
+			position: absolute;
+			color: #b9bdbf;
+    		display: block;
+			font-family: PTN57F;
+			font-size: 12px;
+   	 		padding-left: 8px;
+			&:before {
+				content: "";
+			    position: absolute;
+			    height: 34px;
+			    top: -28px;
+			    left: 0;
+			    width: 1px;
+			    background: #b9bdbf;
+			}
+		}
+	}
+}

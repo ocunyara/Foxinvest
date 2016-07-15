@@ -1,0 +1,345 @@
+//	Sedebar_left
+
+
+.sidebar_right {
+	    margin: 0 0 0 6px;
+	    padding: 0 50px 0 0;
+	    background: #f6f8fa;
+	    width: 320px;
+		box-shadow: 5px 16px 39px 2px rgba(0,0,0,0.3);
+		&:after {
+			content: "";
+    	    display: block;
+			width: 30px;
+	    	height: 62px;
+	    	position: absolute;
+			top: -12px;
+    		right: -35px;
+			background: url(../image/scve.png);
+		}
+
+	.title_h3 {
+		border-bottom: 2px solid #fc9b28;
+		margin-bottom: 20px;
+		margin-left: 25px;
+		h1 {
+			font-family: @font_eb;
+			font-size: 21px;
+			text-transform: uppercase;
+			color: #09090a;
+			margin: 40px 0 10px 0;
+	   		padding: 0 45px;
+			position: relative;
+				&:after {
+				content: "";
+	    	    display: block;
+				width: 28px;
+		    	height: 42px;
+		    	position: absolute;
+		    	top: -9px;
+		    	left: 0px;
+				background: url(../image/flag4.png);
+			}
+		}
+	}
+}
+.progres {
+	li {
+		position: relative;
+		border-bottom: 1px dotted #c9cbcc;
+		a {
+			float: left;
+			display: block;
+			font-family: @font_reg;
+			font-size: 13px;
+			color: #354356;
+			padding-bottom: 2px;
+			margin: 0px 5px 0 23px;
+			border-bottom: 1px solid #dbe2ec;
+		}
+		.reviews { 
+			&:after {
+				content: "";
+	    	    display: block;
+				width: 16px;
+		    	height: 142px;
+		    	position: absolute;
+				top: 86px;
+
+			    left: 130px;
+				background: url(../image/lop1.png);
+				background-repeat: no-repeat;
+			}
+		}
+		.survey {
+			&:after {
+				content: "";
+	    	    display: block;
+				width: 16px;
+		    	height: 142px;
+		    	position: absolute;
+				top: 86px;
+				left: 195px;
+				background: url(../image/lop2.png);
+				background-repeat: no-repeat;
+			}
+		}
+	}
+	.img1 {
+		width: 95px;
+		height: 77px;
+		margin: 15px 17px 20px 17px;
+		float: left;
+		display: flex;
+		background: #fff;
+		img { width: auto; }
+		span {
+			font-size: 16px;
+			color: #09090a;
+		}
+	}
+	.conh {
+	margin: 11px -2px;
+    font-family: blisspro-light;
+    font-size: 19px;
+    color: #1e69a3;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #dce7f0;
+	span {
+		padding: 0 3px;
+		float: left;
+		display: block;
+		font-family: @form_b;
+		font-size: 21px;
+		color: #09090a;
+	}
+	}
+	a {
+		font-family: blisspro-light;
+		font-size: 19px;
+		color: #1e69a3;
+		padding-bottom: 3px;
+		border-bottom: 1px solid #dce7f0;
+		&:hover { text-decoration: none; }
+	}
+	.ratings {
+		 margin-top: 5px;
+		float: left;
+		span {
+			float: left;
+			font-size: 12px;
+			color: #818891;
+		}
+	}
+	.rating {
+	  float: left;
+	  margin: 11px 0 0 10px;
+	  padding: 0;
+	  height: 20px;
+	}
+	 
+	.rating {
+		li {
+margin: -9px 0 0 0;
+		  float: left;
+		  display: block;
+		  width: 10px;
+		  height: 10px;
+		  float: right; 
+		  text-indent: -9999px; 
+		  cursor: pointer;
+		  background: url(../image/star.png);
+		  background-position: 16px 0px;
+		  border-bottom: none;
+		}
+	}
+	.rating li:hover,
+	.rating li:hover ~ li {
+ 	 background-position: -6px 12px;
+	}
+	.rating li.active,
+	.rating li.active ~ li {
+ 	 background-position: 0 -40px;
+	}
+}
+	.title_h4 {
+		h1 {
+			font-family: @font_eb;
+			font-size: 17px;
+			text-transform: uppercase;
+			color: #09090a;
+			margin: 40px 0 10px 0;
+	   		padding: 0 0 0 75px;
+			position: relative;
+			&:after {
+				content: "";
+	    	    display: block;
+				width: 28px;
+			    height: 36px;
+			    position: absolute;
+			    top: -8px;
+			    left: 38px;
+				background: url(../image/flag5.png);
+			}
+		}
+	}
+.social {
+	margin-left: 25px;
+	width: 245px;
+	height: 78px;
+	border: 1px dashed #b28fbd;
+	border-radius: 6px;
+	text-align: conter;
+	ul { margin: 22px 0 0 22px; }
+	li {
+		float: left;
+		display: block;
+		width: 34px;
+		height: 34px;
+		margin-left: 5px;
+	}
+	a {
+		display: block;
+		width: 34px;
+		height: 34px;
+		width: 34px;
+		height: 34px;
+		border-radius: 50%;
+		background: url(../image/sprite.png);
+		background-position: -3px;
+	}
+	.bk { background-position: -44px; }
+	.fb { background-position: -85px; }
+	.in { background-position: -126px; }
+	.sk { background-position: -168px }
+	p {
+		padding: 38px 4px 30px 0;
+	    line-height: 18px;
+	    font-family: PTS56F;
+	    font-size: 15px;
+	    color: #5c5f62;
+	}
+}
+.blurb {
+	width: 245px;
+	height: 65px;
+	margin: 68px 25px;
+	border-radius: 6px;
+	border: 1px dotted #c8c9cb;
+	position: relative;
+	p {
+		margin: 11px 22px 4px 54px;
+   		padding: 0 0 4px 0;
+		font-family: @font_blght;
+		font-size: 17px;
+		color: #1e69a3;
+		border-bottom: 1px solid #dce7f0;
+		&:after {
+			content: "";
+    	    display: block;
+			width: 26px;
+		    height: 26px;
+		    position: absolute;
+			top: 20px;
+   			left: 15px;
+			background: url(../image/alarm.png);
+		}
+
+	}
+	span {
+		margin: 0px 0 0 56px;
+		font-family: @font_reg;
+		font-size: 12px;
+		color: #7c7f82;
+	}
+}
+.skams {
+	li { padding: 20px 0 12px 25px; }
+	i {
+		cursor: pointer;
+	    padding-left: 5px;
+	    font-family: PTS75F;
+	    font-size: 13px;
+		color: #bec4cd;
+		&:hover {
+			color: #64a6d8;
+		}
+	}
+	.title_h5 {
+		border-bottom: 2px solid #e24a4a;
+		margin-bottom: 20px;
+		margin-left: 25px;
+		h1 {
+			font-family: @font_eb;
+			font-size: 21px;
+			text-transform: uppercase;
+			color: #09090a;
+			margin: 40px 0 10px 0;
+	   		padding: 0 45px;
+			position: relative;
+				&:after {
+				content: "";
+	    	    display: block;
+				width: 28px;
+		    	height: 42px;
+		    	position: absolute;
+		    	top: -9px;
+		    	left: 0px;
+				background: url(../image/flag6.png);
+			}
+		}
+	}
+}
+.popular {
+	li {
+		margin-left: 25px;
+		width: 238px;
+		margin-bottom: 18px;
+		img { width: 238px; }
+	}
+	p {
+		font-family: @font_blght;
+		font-size: 17px;
+		color: #354356;
+		margin-top: 5px;
+		text-decoration: underline;
+		text-decoration-color: #d4d9e0;
+	}
+	.title_h6 {
+		border-bottom: 2px solid #ffc71e;
+		margin-bottom: 20px;
+		margin-left: 25px;
+		h1 {
+			font-family: @font_eb;
+			font-size: 21px;
+			text-transform: uppercase;
+			color: #09090a;
+			margin: 40px 0 10px 0;
+	   		padding: 0 45px;
+			position: relative;
+				&:after {
+				content: "";
+	    	    display: block;
+				width: 28px;
+		    	height: 42px;
+		    	position: absolute;
+		    	top: -9px;
+		    	left: 0px;
+				background: url(../image/flag7.png);
+			}
+		}
+	}
+}
+.top {
+	position: relative;
+	&:after {
+		content: "";
+	    display: block;
+	    width: 34px;
+	    height: 42px;
+	    position: absolute;
+	    top: 90px;
+	    left: 325px;
+		background: url(../image/flag_top.png);
+	}
+}

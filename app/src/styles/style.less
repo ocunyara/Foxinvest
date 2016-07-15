@@ -1,0 +1,418 @@
+@import 'reset';
+@import 'fonts';
+
+@forn_bold: PTS75F;
+@font_reg: PTN57F;
+@font_eb: blisspro-heavy;
+@font_ital: PTS56F;
+@font_blght: blisspro-light;
+@form_b: blisspro-regular;
+@font_ebb: blisspro-extralight;
+
+//  Header
+
+body {
+	background-image: url(../image/bg.png);
+}
+.main_conteiner {
+	background: url(../image/bg_cntent.jpg);
+	background-repeat: repeat-y;
+    background-position: -56px;
+}
+.clearfix {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+header {
+	.logo { 
+		float: left;
+		margin: 12px -17px; 
+	}
+}
+.top_line {
+	height: 50px;
+	width: 100%;
+	background: #3a3a49;
+	.container {
+		padding-left: 0;
+	}
+	.navbar-default {
+		background: #3a3a49;
+		border: none;
+		li {
+			&:first-child a {
+				padding-left: 17px;
+			}
+			&:first-child:after {
+                content: "";
+                display: block;
+                width: 12px;
+                height: 12px;
+                position: absolute;
+			    top: 16px;
+    			left: -13px;
+                background-image: url(../image/hom.png);  
+			}
+			&:after {
+				content: "";
+                display: block;
+                width: 1px;
+                height: 5px;
+                position: absolute;
+				top: 21px;
+			    left: -1px;
+    			background: #4a4a58;
+			}
+		}
+	.navbar-nav a {
+		font-family: @forn_bold;
+		font-size: 14px;
+		padding: 0 21px;
+		text-transform: uppercase; 
+		line-height: 47px;
+		color: #fff;
+		&:hover { color: #a4a4ad; }
+		}
+	}
+	.navber {
+		float: left;
+	}
+	.registration {
+		margin: 16px 47px 0 0px;
+		float: right;
+		position: relative;
+		color: #888;
+		a {
+			font-family: @forn_bold;
+			font-size: 13px;
+			color: #fff;
+			text-transform: uppercase;
+			&:hover { text-decoration: none; }		}
+		.first {
+			color: #f6af03;
+			&:after {
+                content: "";
+                display: block;
+                width: 22px;
+			    height: 22px;
+			    position: absolute;
+			    top: -4px;
+			    left: -38px;
+                background-image: url(../image/men.png);  
+			}
+		}
+	}
+}
+.form1 {
+	p {
+		margin: 10px 30px;
+		font-size: 11px;
+		font-family: @font_reg;
+		color: #818487;
+	}
+	float: right;
+	form {
+		position: relative;
+		margin-top: 32px;	
+		input[type="text"] {
+			width: 370px;
+			height: 50px;
+			padding: 0 50px 0 25px;
+			border-radius: 50px;
+			background: #fdfdfe;
+			border: none;
+			font-family: @font_reg;
+			font-size: 16px;
+			color: #5c5f62;
+		}
+		input[type="submit"] {
+			border-radius: 50%;
+			width: 35px;
+			height: 35px;
+			border: 1px solid #f0f2f7;
+			background: #fdfdfe;
+			position: absolute;
+			top: 7px;
+			right: 10px;
+            background-image: url(../image/search.png);  
+            background-repeat: no-repeat;
+            background-position: 10px;
+		}
+	}
+}
+
+//	Content
+
+.container {
+	border-radius: 5px;
+}
+
+//	Acordion
+
+.left_sidebar {	
+    margin: 0 0 0 -44px;
+    background: #f6f8fa;
+    width: 314px;
+	box-shadow: -5px 16px 39px 2px rgba(0,0,0,0.3);
+
+}
+
+#accordion{
+
+	padding: 42px 0 40px 95px;
+	border-bottom: 2px solid #eff2f5;
+	h3{
+		float: left;
+	    padding-bottom: 5px;
+	    line-height: 17px;
+	    margin-bottom: 5px;
+	    border: 0;
+		border-bottom: 1px solid #dddee1;
+	    font-family: PTS75F;
+	    font-size: 18px;
+	    color: #222;
+	        background: none;
+	    float: left;
+	    clear: both;
+	    position: relative;
+		&:after {
+			content: "";
+	        display: block;
+		    width: 17px;
+		    height: 22px;
+		    position: absolute;
+		    top: 0px;
+		    left: -33px;
+			background: url(../image/prite.png);
+			background-position: 21px;
+		};
+		&.active { outline: none;  }
+	}
+	.qwe2 { &:after { background-position: -16px; }  }
+	.qwe3 { &:after { background-position: -32px; }  }
+	.qwe2 { &:after { background-position: 2px; }  }
+	div {
+		border: none;
+		background: #f6f8fa;
+		float: left;
+	}
+	li {
+	    padding-left: 16px;
+	    font-size: 15px;
+	    margin: 9px -4px;
+	    line-height: 15px;
+	    position: relative;
+	    border: none;
+	    background: #f6f8fa;
+		a {
+			font-family: @font_reg;
+			font-size: 15px;
+			color: #767981;
+		}
+		&:after {
+			content: "";
+	        display: block;
+	        width: 10px;
+	        height: 1px;
+	        position: absolute;
+			top: 8px;
+		    left: 0px;
+			background: #999;
+		}
+	}
+}
+.form2 {
+	margin-left: 48px;
+	h1 { 
+		font-family: @font_eb;
+		font-size: 17px;
+		text-transform: uppercase;
+		color: #09090a;
+		padding: 24px 0 10px 0px;
+		img { margin: 0 7px -11px 15px; }
+	}
+	p {
+		margin: 38px 4px 30px 0;
+	    font-family: PTS56F;
+	    font-size: 15px;
+	    color: #5c5f62;
+	    line-height: 18px;
+		font-family: @font_ital;
+		font-size: 15px;
+		color: #5c5f62;
+	}
+	form {
+		width: 245px;
+		height: 90px;
+		margin: -4px 0px;
+		text-align: center;
+		border-radius: 5px;
+		border: 1px dashed #c8c9cb;
+		input[type="text"] {
+			width: 215px;
+			height: 40px;
+			margin: 15px 0 10px 0;
+			border-radius: 1px;
+			font-family: @font_reg;
+			font-family: 14px;
+			color: #5c5f62;
+			padding: 0 10px;
+			border: 1px solid #c8c9cb;
+		}
+		input[type="submit"] {
+			width: 155px;
+			height: 38px;
+			margin: 5px 0px;
+			background: #ffc71e;
+			border-radius: 40px;
+			border: none;
+			font-family: @font_eb;
+			font-size: 13px;
+			color: #09090a;
+		}
+	}
+}
+.haip {
+	.title_h {
+		    margin-left: 48px;
+		border-bottom: 2px solid #5299d0;
+		margin-bottom: 25px;
+	}
+	h1 {
+		font-family: @font_eb;
+		font-size: 21px;
+		text-transform: uppercase;
+		color: #09090a;
+		margin: 58px 0 10px 0;
+   		padding: 0 45px;
+		position: relative;
+		&:after {
+			content: "";
+	        display: block;
+			width: 28px;
+		    height: 42px;
+		    position: absolute;
+		    top: -9px;
+		    left: 0px;
+			background: url(../image/flag2.png);
+		}
+
+	}
+	li {
+		padding: 20px 0 15px 48px;
+		border-bottom: 1px dotted #c9cbcc;
+		.btn {
+			padding: 7px 13px;
+			margin-right: 15px;
+			float: left;
+			font-family: @font_reg;
+			font-size: 11px;
+			background: #fff;
+			border: 1px solid #e9edf0;
+			color: #b2b6bc;
+			text-decoration: none;
+		}
+		a {
+			margin: -5px 0;
+			font-family: blisspro-light;
+			font-size: 19px;
+			color: #1e69a3;
+			padding-bottom: 3px;
+			border-bottom: 1px solid #dce7f0;
+			&:hover { text-decoration: none; }
+		}
+		.img {
+			width: 95px;
+			height: 77px;
+			margin-top: 15px;
+			margin-right: 15px;
+			float: left;
+			display: flex;
+			border: 1px solid #eaeef4;
+			background: #fff;
+		}
+		img { margin: auto; }
+		h4 {
+			margin: 18px 0 5px 0;
+			font-family: @forn_bold;
+			font-size: 14px;
+			color: #37373a;
+			span {
+				font-family: @font_reg;
+				font-size: 11px;
+				color: #37373a;
+			}
+		}
+		p {
+			font-family: @font_ital;
+			font-size: 12px;
+			color: #818891;
+		}
+		h5 {
+			margin: 6px 0 10px;
+			font-family: @font_reg;
+			font-size: 12px;
+			color: #818891;
+			span {
+				margin: 18px 0 5px 0;
+				font-family: @forn_bold;
+				font-size: 14px;
+				color: #37373a;
+			}
+		}
+		h6 {
+			font-family: @font_reg;
+			font-size: 12px;
+			color: #818891;
+			span {
+				padding: 3px 4px;
+				font-family: @forn_bold;
+				font-size: 13px;
+				color: #fff;
+				text-transform: uppercase;
+			}
+			.problem { background: #f5bd36; }
+			.skam { background: #e24a4a; }
+			.pay { background: #b0c658; }
+		}
+	}
+	.baner {
+		img {
+			margin-left: 48px;
+			padding-top: 40px;
+		}
+	}
+}
+.payments {
+	.title_h2 {
+		border-bottom: 2px solid #a0c40e;
+		margin-bottom: 27px;
+		margin-left: 48px;
+		h1 {
+			font-family: @font_eb;
+			font-size: 21px;
+			text-transform: uppercase;
+			color: #09090a;
+			margin: 40px 0 10px 0;
+	   		padding: 0 45px;
+			position: relative;
+				&:after {
+				content: "";
+	    	    display: block;
+				width: 28px;
+		    	height: 42px;
+		    	position: absolute;
+		    	top: -9px;
+		    	left: 0px;
+				background: url(../image/flag3.png);
+			}
+		}
+	}
+}
+@import 'sidebar_right';
+@import 'content';
+@import 'payments_slider';
+@import 'footer';
+@import 'media';
